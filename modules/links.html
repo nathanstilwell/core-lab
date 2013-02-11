@@ -1,0 +1,130 @@
+<!doctype html>
+<html>
+<head>
+  <title>Core Lab Interactions :: Lesson 2</title>
+
+  <link rel="stylesheet" href="../css/normalize.css">
+  <link rel="stylesheet" href="../css/prettify-custom.css">
+  <link rel="stylesheet" href="../css/slides.css">
+
+<!-- Extra special local -->
+  <style type="text/css" media="screen">
+    .long-link {
+      font-size: 25px;
+    }
+  </style>
+  <script src="../js/vendor/modernizr-2.0.6.min.js"></script>
+</head>
+<body>
+
+  <section id="presentation" class="presentation">
+
+    <article class="slide">
+      <h1 class="title huge">Links</h1>
+      <p class="sub-text">Putting the <em>hyper</em> in hypertext</p>
+    </article>
+
+    <article class="slide">
+      <h1 class="title">anchor tag</h1>
+      <p class="tag">
+        &lt;a href="" title="" target=""&gt;Link!&lt;/a&gt;
+      </p>
+    </article>
+
+    <article class="slide">
+      <h1 class="title no-space fancy">href points us to a diffent place</h1>
+      <p class="tag">
+        &lt;a href="<span style="color : red">[location]</span>"&gt;Link!&lt;/a&gt;
+      </p>
+    </article>
+
+    <article class="slide">
+      <h1 class="title fancy no-space">the ID attr</h1>
+      <pre>
+        <p class="code">
+          &lt;section <span style="color : red">id="section-1"</span>&gt;Section 1&lt;/section&gt;
+        </p>
+      </pre>
+      <p class="sub-text">
+        <a href="../examples/id-anchor-demo.html" title="example" target="_blank">example</a>
+      </p>
+    </article>
+
+    <article class="slide">
+      <h1 class="title">link to different document</h1>
+      <p class="sub-text">but on the same site</p>
+    </article>
+
+    <article class="slide">
+      <h1 class="title fancy">put the path in the href</h1>
+      <p class="tag">
+        &lt;a href="<span style="color : red">/path/to/file.html</span>"&gt;Link!&lt;/a&gt;
+      </p>
+    </article>
+
+    <article class="slide">
+      <h1 class="title">Paths</h1>
+    </article>
+
+    <article class="slide">
+      <h1 class="title">link to a diffent document</h1>
+      <p class="sub-text">on a diffent site</p>
+    </article>
+
+    <article class="slide">
+      <h1 class="title fancy">put the url in the href</h1>
+      <p class="tag" style="font-size : 50px;">
+        &lt;a href="<a href="http://bit.ly/YPONAi" style="text-decoration : none; border : 0;"><span style="color : red;">http://bit.ly/YPONAi</span></a>"&gt;Link!&lt;/a&gt;
+      </p>
+    </article>
+
+    <article class="slide">
+      <h1 class="title">Anatomy of a URL</h1>
+      <p class="sub-text">do you know this already?</p>
+    </article>
+
+    <article class="slide">
+      <h1 class="title">example url</h1>
+      <p class="sub-text long-link">{protocol}://{subdomain}.{domain}.{top-level-domain}/{path}/{file}#{anchor}?{query-string}</p>
+      <p>or</p>
+      <p class="">
+        <a class="long-link" href="http://store.apple.com/us/browse/home/shop_mac/family/macbook_air#topic-questions" title="">
+          http://store.apple.com/us/browse/home/shop_mac/family/macbook_air#topic-questions
+        </a></p>
+    </article>
+
+    <article class="slide">
+      <h1 class="title fancy">email link</h1>
+      <p class="tag" style="font-size : 50px;">
+        &lt;a href="<a href="mailto:your@mom.com" style="text-decoration : none; border : 0;"><span style="color : red;">mailto:your@mom.com</span></a>"&gt;Hi Mom!&lt;/a&gt;
+      </p>
+    </article>
+
+    <article class="slide">
+      <h1 class="title">New Tab / New Window</h1>
+      <p class="tag" style="font-size : 50px;">
+        &lt;a href="http://f.oo/" <span style="color : red;">target="_blank"</span>&gt;Link!&lt;/a&gt;
+      </p>
+    </article>
+    </article>
+
+
+
+  </section><!-- #presentation -->
+  <script src="../js/vendor/jquery.js"></script>
+  <script src="../js/showandtell.js"></script>
+  <script src="../js/vendor/prettify.js"></script>
+  <script>
+    (function($, global, undefined){
+
+      // see demo for more conifg options
+      showandtell.init({
+        bigSpace : false
+      });
+      prettyPrint();
+
+    }(this.jQuery, this));
+  </script>
+
+</body>
+</html>

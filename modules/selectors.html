@@ -1,0 +1,231 @@
+<!doctype html>
+<html>
+<head>
+  <title>Core Lab Interactions :: Lesson 2</title>
+
+  <link rel="stylesheet" href="../css/normalize.css">
+  <link rel="stylesheet" href="../css/prettify-custom.css">
+  <link rel="stylesheet" href="../css/slides.css">
+
+<!-- Extra special local -->
+  <style type="text/css" media="screen">
+    .long-link {
+      font-size: 25px;
+    }
+  </style>
+  <script src="../js/vendor/modernizr-2.0.6.min.js"></script>
+</head>
+<body>
+
+  <section id="presentation" class="presentation">
+
+
+
+
+
+
+
+    <article class="slide">
+      <h1 class="title">Selectors</h1>
+      <p class="sub-text">targeting your markup</p>
+      <em class="blur">I feel like we've been here before</em>
+    </article>
+
+
+    <article class="slide">
+      <h1 class="title">Type Selector</h1>
+      <p class="sub-text">Use the tag name</p>
+    </article>
+
+    <article class="slide">
+      <pre  class="code"><code>
+          h1 {
+            font-size : 100px;
+            font-weight : bold;
+          }
+
+          p {
+            color : #f0f;
+            padding : 15px
+          }
+
+          ul {
+            color : green;
+          }
+      </code></pre>
+    </article>
+
+    <article class="slide">
+      <h1 class="title">Class Selector</h1>
+      <p class="sub-text">My favorite, stay tuned to find out way</p>
+    </article>
+
+    <article class="slide">
+      <pre class="code"><code>
+&lt;!-- HTML --&gt;
+           &lt;div class="my-div"&gt;blah blah blah &lt;/div&gt;
+
+/* CSS */
+          .my-div {
+            font-size : 100px;
+            font-weight : bold;
+          }
+      </code></pre>
+    </article>
+
+    <article class="slide">
+      <h1 class="title huge">Id selector</h1>
+    </article>
+
+    <article class="slide">
+      <pre class="code"><code>
+&lt;!-- HTML --&gt;
+        &lt;div id="my-div"&gt;blah blah blah &lt;/div&gt;
+
+/* CSS */
+        #my-div {
+            font-size : 100px;
+            font-weight : bold;
+          }
+      </code></pre>
+    </article>
+
+
+    <article class="slide">
+      <h1 class="title">Combinators</h1>
+      <p class="sub-text">Because you probably want more than one thing</p>
+    </article>
+
+    <article class="slide">
+      <h1 class="title">Descentant Selector</h1>
+      <p class="sub-text">Stuff inside of stuff</p>
+    </article>
+
+    <article class="slide">
+      <pre  class="code"><code>
+&lt;!-- HTML --&gt;
+          &lt;div class="my-div"&gt;
+            &lt;p&gt;
+              some stuff
+            &lt;/p&gt;
+          &lt;/div&gt;
+
+/* CSS */
+          .my-div p{
+            color : purple;
+          }
+      </code></pre>
+    </article>
+
+    <article class="slide">
+      <h1 class="title">Adjacent sibling</h1>
+      <p class="sub-text">The + combinator matches the second element only if it
+  is immediately following the first element</p>
+    </article>
+
+    <article class="slide">
+      <pre class="code"><code>
+&lt;!-- HTML --&gt;
+        &lt;div class="my-div"&gt;
+          &lt;p class="test-p"&gt;
+            some stuff
+          &lt;/p&gt;
+
+          &lt;p&gt;
+            some other stuff
+          &lt;/p&gt;
+        &lt;/div&gt;
+
+/* CSS */
+        .my-div .test-p + p{
+          color : purple;
+        }
+      </code></pre>
+    </article>
+
+    <article class="slide">
+      <h1 class="title">General sibling</h1>
+      <p class="sub-text">The ~ combinator separates two selectors and matches the
+  second element only if it is preceded by the first, and
+  both share a common parent.</p>
+    </article>
+
+    <article class="slide">
+      <pre class="code"><code>
+&lt;!-- HTML --&gt;
+          &lt;div class="my-div"&gt;
+            &lt;p class="test-p"&gt;
+              some stuff
+            &lt;/p&gt;
+
+            &lt;p&gt;
+              some other stuff
+            &lt;/p&gt;
+
+
+            &lt;p&gt;
+              yet, even more stuff
+            &lt;/p&gt;
+          &lt;/div&gt;
+
+/* CSS */
+          .my-div .test-p ~ p{
+            color : purple;
+          }
+      </code></pre>
+    </article>
+
+    <article class="slide">
+      <h1 class="title">Child Selector</h1>
+      <p class="sub-text">The > combinator separates two selectors and matches only those elements matched by the second selector that are direct children of elements matched by the first.</p>
+    </article>
+
+    <article class="slide">
+      <pre class="code"><code>
+&lt;!-- HTML --&gt;
+          &lt;div class="my-div"&gt;
+            &lt;p&gt;
+              some stuff
+            &lt;/p&gt;
+
+            &lt;p&gt;
+              some other stuff
+            &lt;/p&gt;
+
+            &lt;p&gt;
+              yet, even more stuff
+            &lt;/p&gt;
+          &lt;/div&gt;
+
+/* CSS */
+          .my-div > p{
+            color : purple;
+          }
+      </code></pre>
+    </article>
+
+
+
+
+
+
+
+
+  </section><!-- #presentation -->
+  <script src="../js/vendor/jquery.js"></script>
+  <script src="../js/showandtell.js"></script>
+  <script src="../js/vendor/prettify.js"></script>
+  <script>
+    (function($, global, undefined){
+
+      // see demo for more conifg options
+      showandtell.init({
+        bigSpace : false
+      });
+      prettyPrint();
+
+    }(this.jQuery, this));
+  </script>
+
+</body>
+</html>

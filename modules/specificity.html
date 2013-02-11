@@ -1,0 +1,189 @@
+<!doctype html>
+<html>
+<head>
+  <title>Core Lab Interactions :: Lesson 2</title>
+
+  <link rel="stylesheet" href="../css/normalize.css">
+  <link rel="stylesheet" href="../css/prettify-custom.css">
+  <link rel="stylesheet" href="../css/slides.css">
+
+<!-- Extra special local -->
+  <style type="text/css" media="screen">
+    .long-link {
+      font-size: 25px;
+    }
+  </style>
+  <script src="../js/vendor/modernizr-2.0.6.min.js"></script>
+</head>
+<body>
+
+  <section id="presentation" class="presentation">
+
+
+
+
+
+
+
+
+
+
+
+    <article class="slide">
+      <h1 class="title">Where do we put these styles?</h1>
+      <p class="sub-text"></p>
+    </article>
+
+    <article class="slide">
+      <h1 class="title">inline</h1>
+      <p class="sub-text">the style attr</p>
+      <pre>
+        <p class="code">
+          &lt;div class="some-div" style="color : tomato;"&gt;&lt;/div&gt;
+        </p>
+      </pre>
+    </article>
+
+    <article class="slide">
+      <h1 class="title">The style tag</h1>
+      <p class="sub-text">Put it in your head, please</p>
+      <pre>
+        <p class="code">
+          &lt;style&gt;
+            p { color : tomato; }
+          &lt;/style&gt;
+        </p>
+      </pre>
+    </article>
+
+    <article class="slide">
+      <h1 class="title">In it's own file</h1>
+      <p class="sub-text">Linked style sheets, the link tag. Also, in the head</p>
+      <pre>
+        <p class="code">
+          &lt;link rel="stylesheet" href="css/style.css"&gt;
+        </p>
+      </pre>
+    </article>
+
+
+
+
+    <article class="slide"><div class="content">
+      <a href="selectors.html" title="CSS Math">More CSS Selectors</a>
+    </div></article>
+
+
+
+
+
+    <article class="slide">
+      <h1 class="title">Specificity</h1>
+      <p class="sub-text">Now it gets complicated</p>
+    </article>
+
+    <article class="slide">
+      <h1 class="no-space">Who wins?</h1>
+      <pre class="code"><code>
+&lt;!-- HTML --&gt;
+          &lt;div id="thing" class="thing"&gt;
+
+/* CSS */
+          div { color : red; }
+          #thing { color : blue; }
+          .thing { color : green; }
+      </code></pre>
+    </article>
+
+    <article class="slide">
+      <h1 class="title">Let's try</h1>
+      <p class="sub-text">
+        <a href="../examples/color-test.html" title="Color Test" target="_blank">here</a>
+      </p>
+    </article>
+
+    <article class="slide">
+      <h1 class="title">But why?</h1>
+      <p class="sub-text"><em>Specificity Rules</em></p>
+    </article>
+
+    <article class="slide">
+      <h1 class="title">Some say,</h1>
+      <pre>
+        Ids     : 100 points
+        Classes : 10  points
+       Types   : 1   piont
+      </pre>
+    </article>
+
+    <article class="slide">
+      <h1 class="title">Prove it</h>
+      <p class="sub-text">
+        <a href="../examples/class-override.html" title="How to override an ID" target="_blank">Here</a>
+      </p>
+    </article>
+
+    <article class="slide">
+      <h1 class="title">So really,</h1>
+      <p class="sub-text">you can never beat an id. so don't use them.</p>
+    </article>
+
+    <article class="slide">
+      <h1 class="title">What about</h1>
+      <p class="sub-text">
+        <a href="../examples/cascade.html" title="this" target="_blank">this</a>
+      </p>
+    </article>
+
+    <article class="slide">
+      <h1 class="title">The Cascade</h1>
+      <pre>
+Styles, top to bottom
+Linked stylesheets, top to bottom
+Internal styles
+Inline styles
+      </pre>
+    </article>
+
+    <article class="slide">
+      <h1 class="title">
+        <a href="../lesson-2/css-selector-test.html" title="this" target="_blank">
+          Quiz Time
+        </a>
+      </h1>
+      <p class="sub-text">
+        <a href="../lesson-2/css-selector-test-rendered.html" title="this" target="_blank">answers</a>
+      </p>
+    </article>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  </section><!-- #presentation -->
+  <script src="../js/vendor/jquery.js"></script>
+  <script src="../js/showandtell.js"></script>
+  <script src="../js/vendor/prettify.js"></script>
+  <script>
+    (function($, global, undefined){
+
+      // see demo for more conifg options
+      showandtell.init({
+        bigSpace : false
+      });
+      prettyPrint();
+
+    }(this.jQuery, this));
+  </script>
+
+</body>
+</html>

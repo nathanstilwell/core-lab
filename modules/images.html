@@ -1,0 +1,96 @@
+<!doctype html>
+<html>
+<head>
+  <title>Core Lab Interactions :: Lesson 2</title>
+
+  <link rel="stylesheet" href="../css/normalize.css">
+  <link rel="stylesheet" href="../css/prettify-custom.css">
+  <link rel="stylesheet" href="../css/slides.css">
+
+<!-- Extra special local -->
+  <style type="text/css" media="screen">
+    .long-link {
+      font-size: 25px;
+    }
+  </style>
+  <script src="../js/vendor/modernizr-2.0.6.min.js"></script>
+</head>
+<body>
+
+  <section id="presentation" class="presentation">
+
+
+
+
+    <article class="slide">
+      <h1 class="title">Images</h1>
+    </article>
+
+
+    <article class="slide">
+      <h1 class="title">Img Tag</h1>
+      <p class="sub-text">&lt;img src="" alt="" title="" height="" width=""&gt;</p>
+    </article>
+
+
+    <article class="slide">
+      <h1 class="title">Img Tag</h1>
+      <p class="sub-text">
+        <span class="blur">&lt;img</span> src="[image]" <span class="blur">alt="" title="" height="" width=""&gt;</span></p>
+    </article>
+
+
+    <article class="slide">
+      <h1 class="title">Img Tag</h1>
+      <p class="sub-text"><span class="blur">
+        &lt;img src=""</span> alt="[accessible]" <span class="blur">height="" width=""&gt;</span>
+      </p>
+    </article>
+
+    <article class="slide">
+      <h1 class="title">Img Tag</h1>
+      <p class="sub-text">
+        <span class="blur">&lt;img src="" alt=""</span> title="[hover]" <span class="blur"> height="" width=""&gt;</span></p>
+    </article>
+
+    <article class="slide">
+      <h1 class="title">Img Tag</h1>
+      <p class="sub-text">
+        <span class="blur">&lt;img src=""</span> height="[guess?]" width="[what?]"<span class="blur">&gt;</span>
+      </p>
+    </article>
+
+    <article class="slide">
+      <h1 class="title">Broken or pre-load</h1>
+      <p class="sub-text">You want all of those attrs if possible</p>
+    </article>
+
+    <article class="slide">
+      <img src="http://placekitten.com/400/400" alt="a kitty" title="a kitty" height="400px" width="400px">
+      <img src="/not/a/real/path" alt="" title="a kitty" height="300px" width="300px">
+      <img src="/not/a/real/path" alt="This is broken" title="a kitty" height="300px" width="300px">
+    </article>
+
+
+
+
+
+
+  </section><!-- #presentation -->
+  <script src="../js/vendor/jquery.js"></script>
+  <script src="../js/showandtell.js"></script>
+  <script src="../js/vendor/prettify.js"></script>
+  <script>
+    (function($, global, undefined){
+
+      // see demo for more conifg options
+      showandtell.init({
+        bigSpace : false
+      });
+      prettyPrint();
+
+    }(this.jQuery, this));
+  </script>
+
+</body>
+</html>

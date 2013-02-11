@@ -1,0 +1,13 @@
+.presentation .code.big {
+  font-size: 75px;
+}
+
+.presentation .code.medium {
+  font-size: 50px;
+}
+
+
+.presentation .slide .code {
+  color : #333;
+  background-color: Azure;
+}
