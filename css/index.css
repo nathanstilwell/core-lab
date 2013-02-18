@@ -1,0 +1,111 @@
+html, body {
+  background-color: #333;
+  color: #ddd;
+  font-family: sans-serif;
+  font-size: 24px;
+}
+
+h1, h2 {
+  padding: 0;
+  margin: 0;
+}
+
+h1 {
+  font-size: 2em;
+}
+
+h2 {
+  font-size: 1.25em;
+}
+
+.page-header {
+  background-color: #000;
+  padding: 2em;
+}
+
+.lessons {
+  background-color: #222;
+  color: #888;
+}
+
+.lesson {
+  padding: .5em 2em;
+  -webkit-transition : all .45s ease;
+     -moz-transition : all .45s ease;
+      -ms-transition : all .45s ease;
+       -o-transition : all .45s ease;
+          transition : all .45s ease;
+}
+
+.lesson nav a {
+  color : #fff;
+  margin: 0 1em;
+  text-decoration: none;
+  -webkit-transition : all .45s ease;
+     -moz-transition : all .45s ease;
+      -ms-transition : all .45s ease;
+       -o-transition : all .45s ease;
+          transition : all .45s ease;
+}
+
+.lesson-1 { background-color: #222; }
+.lesson-2 { background-color: #333; }
+.lesson-3 { background-color: #444; }
+.lesson-4 { background-color: #555; }
+.lesson-5 { background-color: #666; }
+.lesson-6 { background-color: #555; }
+.lesson-7 { background-color: #444; }
+.lesson-8 { background-color: #333; }
+.lesson-9 { background-color: #222; }
+
+
+.lesson:hover {
+  color : #222;
+  -webkit-transition : all .45s ease;
+     -moz-transition : all .45s ease;
+      -ms-transition : all .45s ease;
+       -o-transition : all .45s ease;
+          transition : all .45s ease;
+}
+
+.lesson:hover nav a {
+  color: #000;
+  -webkit-transition : all .45s ease;
+     -moz-transition : all .45s ease;
+      -ms-transition : all .45s ease;
+       -o-transition : all .45s ease;
+          transition : all .45s ease;
+}
+
+.lesson:hover nav a:hover {
+  border-bottom: 1px dashed;
+  /*text-shadow: 0 0 4px rgba(0, 0, 0, .45);*/
+}
+
+.lesson-1:hover { background-color: #1bc900; }
+.lesson-2:hover { background-color: #ff6a00; }
+.lesson-3:hover { background-color: #4000ff; }
+.lesson-4:hover { background-color: #f300ff; }
+.lesson-5:hover { background-color: #ffcb00; }
+.lesson-6:hover { background-color: #ff005e; }
+.lesson-7:hover { background-color: #2cb5ff; }
+.lesson-8:hover { background-color: #21b775; }
+.lesson-9:hover { background-color: #e40013; }
+
+
+
+
+
+.lesson .title {
+  padding-right: 2.5em;
+}
+
+
+
+
+
+
+
+
+
+
