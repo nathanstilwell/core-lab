@@ -56,7 +56,8 @@ a, a:link, a:visited, a:active {
           transition : color .75s ease;
 }
 
-a:hover {
+a:hover,
+.presentation a.title:hover {
   color: blue;
   -webkit-transition : color .75s ease;
      -moz-transition : color .75s ease;
@@ -89,6 +90,10 @@ a:hover {
   font-size: 130px;
   margin: .5em 0;
   text-shadow: none;
+}
+
+.presentation .slide-title {
+  font-size: 75px;
 }
 
 .presentation .sub-title {

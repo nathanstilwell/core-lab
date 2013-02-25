@@ -12,6 +12,10 @@
     .long-link {
       font-size: 25px;
     }
+
+    .image-alt-text {
+      font-size: 25px;
+    }
   </style>
   <script src="../js/vendor/modernizr-2.0.6.min.js"></script>
 </head>
@@ -65,13 +69,19 @@
       <p class="sub-text">You want all of those attrs if possible</p>
     </article>
 
-    <article class="slide">
+<!--     <article class="slide">
       <img src="http://placekitten.com/400/400" alt="a kitty" title="a kitty" height="400px" width="400px">
       <img src="/not/a/real/path" alt="" title="a kitty" height="300px" width="300px">
       <img src="/not/a/real/path" alt="This is broken" title="a kitty" height="300px" width="300px">
     </article>
+ -->
 
 
+    <article class="slide image-alt-text">
+      <img src="http://placekitten.com/400/400" alt="a kitty" title="a kitty" height="400px" width="400px">
+      <img src="/not/a/real/path" alt="" title="a kitty" height="300px" width="300px">
+      <img src="/not/a/real/path" alt="This is broken" title="a kitty" height="300px" width="300px">
+    </article>
 
 
 

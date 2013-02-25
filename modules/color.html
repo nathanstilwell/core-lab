@@ -1,0 +1,210 @@
+<!doctype html>
+<html>
+<head>
+  <title>Core Lab Interactions :: Lesson 2</title>
+
+  <link rel="stylesheet" href="../css/normalize.css">
+  <link rel="stylesheet" href="../css/prettify-custom.css">
+  <link rel="stylesheet" href="../css/slides.css">
+
+<!-- Extra special local -->
+  <style type="text/css" media="screen">
+
+    .text-color-demo1 {
+      background-color: #00fd84;
+      color: #c8fd28;
+      font-size: 60px;
+      font-weight: bold;
+      font-family: sans-serif;
+    }
+
+    .text-color-demo2 {
+      background-color : #ff255f;
+      color: #49fff8;
+      font-size: 60px;
+      font-weight: bold;
+      font-family: sans-serif;
+    }
+
+    .example {
+      margin: 0 auto;
+      position: relative;
+      width: 600px;
+    }
+
+    .solid-thing{
+      background-color: #57dbff;
+      height: 300px;
+      left: 0;
+      position: absolute;
+      top: 50px;
+      width: 300px;
+    }
+
+    .see-through-thing {
+      position: absolute;
+      top: 200px;
+      left: 150px;
+      background-color : red;
+      color: #000;
+    }
+
+    .opacity-example .see-through-thing{
+      opacity : .45;
+    }
+
+    .alpha-example .see-through-thing{
+      background-color : rgba(255, 0, 0, .45);
+    }
+
+
+  </style>
+  <script src="../js/vendor/modernizr-2.0.6.min.js"></script>
+</head>
+<body>
+
+  <section id="presentation" class="presentation">
+
+    <article class="slide">
+      <h1 class="title">
+        <span style="color : red">C</span>
+        <span style="color : orange">o</span>
+        <span style="color : green">l</span>
+        <span style="color : blue">o</span>
+        <span style="color : violet">r</span>
+      </h1>
+    </article>
+
+    <article class="slide">
+      <h1 class="title huge no-space">Ways to define color</h1>
+    </article>
+
+    <article class="slide">
+      <h1 class="title no-space">Good Ol' Hex</h1>
+      <p class="title">
+        #<span style="color:red">FF</span><span style="color:green">FF</span><span style="color:blue">FF</span>
+      </p>
+    </article>
+
+    <article class="slide">
+      <h1 class="title">Wait, what's a hexidecimal</h1>
+      <pre class="hex-counting"><code>
+1  2  3  4  5  6  7  8  9
+1  2  3  4  5  6  7  8  9
+
+10  11  12  13  14  15
+A   B   C   D   E   F
+      </code></pre>
+    </article>
+
+    <article class="slide">
+      <h1 class="title">RGB</h1>
+      <p class="title">
+        rgb(<span style="color:red">255, </span><span style="color:green">255, </span><span style="color:blue">255</span>)
+      </p>
+    </article>
+
+    <article class="slide">
+      <h1 class="title no-space">HSL</h1>
+      <p class="title no-space" style="font-size : 100px">
+        hsl([hue], [saturation], [lightness])
+      </p>
+      <p class="sub-text">
+        <a href="http://mothereffinghsl.com/" title="Also, this" target="_blank">Also, this</a>
+      </p>
+    </article>
+
+
+    <article class="slide">
+      <h1 class="title">Where to use</h1>
+      <p class="sub-text">
+        color -- Text (foreground) color
+      </p>
+      <p class="sub-text">
+        background-color : Background Color
+      </p>
+    </article>
+
+    <article class="slide">
+      <h1 class="title no-space">Like so</h1>
+      <pre><code>
+background-color: #00fd84;
+color: #c8fd28;
+      </code></pre>
+      <p class="text-color-demo1">Clashtastic</p>
+      <pre><code>
+background-color : #ff255f;
+color: #49fff8;
+      </code></pre>
+      <p class="text-color-demo2">Clashtastic</p>
+    </article>
+
+    <article class="slide">
+      <h1 class="title">Transparency</h1>
+      <p class="sub-text">
+        Opacity vs Alpha
+      </p>
+    </article>
+
+    <article class="slide">
+      <h1 class="title">Opacity</h1>
+      <p class="sub-text">
+        Changes the transparancy of the entire element
+      </p>
+    </article>
+
+    <article class="slide">
+      <h1 class="title">Alpha</h1>
+      <p class="sub-text">
+        Changes the transparancy of a color
+      </p>
+    </article>
+
+
+    <article class="slide">
+      <h1 class="title">Opacity</h1>
+      <div class="example opacity-example">
+
+        <div class="solid-thing"></div>
+
+        <div class="see-through-thing">
+          <h2>I'm an h2!</h2>
+          <p>This is some text</p>
+        </div>
+
+      </div>
+    </article>
+
+    <article class="slide">
+      <h1 class="title">Alpha</h1>
+      <div class="example alpha-example">
+
+        <div class="solid-thing"></div>
+
+        <div class="see-through-thing">
+          <h2>I'm an h2!</h2>
+          <p>This is some text</p>
+        </div>
+
+      </div>
+    </article>
+
+
+  </section><!-- #presentation -->
+  <script src="../js/vendor/jquery.js"></script>
+  <script src="../js/showandtell.js"></script>
+  <script src="../js/vendor/prettify.js"></script>
+  <script>
+    (function($, global, undefined){
+
+      // see demo for more conifg options
+      showandtell.init({
+        bigSpace : true
+      });
+      prettyPrint();
+
+    }(this.jQuery, this));
+  </script>
+
+</body>
+</html>

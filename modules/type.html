@@ -1,0 +1,293 @@
+<!doctype html>
+<html>
+<head>
+  <title>Core Lab Interactions :: Lesson 2</title>
+
+  <link rel="stylesheet" href="../css/normalize.css">
+  <link rel="stylesheet" href="../css/prettify-custom.css">
+  <link rel="stylesheet" href="../css/slides.css">
+
+<!-- Extra special local -->
+  <style type="text/css" media="screen">
+
+  .font-family-example {
+    font-family: "Doesn't Exist", "Helvetica Neue", Georgia, serif;
+    font-size: 150px;
+  }
+
+  </style>
+  <script src="../js/vendor/modernizr-2.0.6.min.js"></script>
+</head>
+<body>
+
+  <section id="presentation" class="presentation">
+
+    <article class="slide"><div class="content">
+      <h1 class="title">Type</h1>
+      <p class="sub-title">
+        CSS properties that apply to how text is presented.
+      </p>
+    </div></article>
+
+    <article class="slide">
+      <div class="content">
+        <h2 class="slide-title"><code>font-family</code></h2>
+        <p class="sub-title">To change the actual set of glyphs used in fonts, we use the <code>font-family</code> css property.</p>
+        <pre class="code"><code>
+    .fancy-font {
+      font-family: Georgia;
+    }
+        </code></pre>
+      </div>
+    </article>
+
+    <article class="slide">
+      <div class="content">
+        <p class="sub-title">
+          <code>font-family</code> can accept a comma seperated list of fonts to try. In case a font is not available on a given platform.
+        </p>
+
+        <pre class="code"><code>
+    .fancy-font {
+      font-family: "Super Fancy Font", Georgia, serif;
+    }
+        </code></pre>
+      </div>
+    </article>
+
+    <article class="slide">
+      <div class="content">
+        <p class="sub-title">Your font-family definitions should usually end with a general fallback of</p>
+        <ul class="trad-list">
+          <li><span style="font-family: serif">serif</span></li>
+          <li><span style="font-family: sans-serif">sans-serif</span></li>
+          <li><span style="font-family: monospace">monospace</span></li>
+          <li><span style="font-family: cursive">cursive</span></li>
+          <li><span style="font-family: fantasy">fantasy</span></li>
+        </ul>
+      </div>
+    </article>
+
+    <article class="slide">
+      <div class="content">
+        <h2 class="slide-title">Example</h2>
+        <p class="font-family-example">Font Family</p>
+      </div>
+    </article>
+
+
+    <article class="slide"><div class="content">
+      <h2 class="slide-title"><code>
+        font-size
+      </code></h2>
+      <p class="sub-title">The font size property specifies the size of the font. The value can either be in px, em, or %.</p>
+    </div></article>
+
+    <article class="slide"><div class="content">
+      <h2 class="slide-title">What's an em?</h2>
+      <p class="sub-title">An `em` comes from the type setting concept of the width of a lowercase 'm' in a given font. In CSS it represents a percentage of the inherited font-size.</p>
+
+      <pre class="code"><code>
+  /* base font size is 16px */
+    .test {
+      font-size: 1em;   /* 16px */
+      font-size: 2em;   /* 32px */
+      font-size: 1.5em; /* 24px */
+      font-size: .75em;  /* 12px */
+    }
+      </code></pre>
+    </div></article>
+
+    <article class="slide"><div class="content">
+      <h2 class="slide-title">Example</h2>
+      <div class="example" style="font-size: 25px">
+        <p style="font-size: 1em">1em</p>
+        <p style="font-size: 2em">2em</p>
+        <p style="font-size: 1.5em">1.5em</p>
+        <p style="font-size: .75em">.75em</p>
+      </div>
+    </div></article>
+
+
+    <article class="slide"><div class="content">
+      <h2 class="slide-titl">Percentage</h2>
+      <p class="sub-title">Percentage (%) is much like `em` in that it is a size relative to it's inherited font size.</p>
+      <pre class="code"><code>
+  /* base font size is 16px */
+  .test {
+    font-size: 100%;  /* 16px */
+    font-size: 62.5%; /* 10px */
+    font-size: 150%;  /* 24px */
+    font-size: 75%;   /* 12px */
+  }
+      </code></pre>
+    </div></article>
+
+
+    <article class="slide"><div class="content">
+    <h2 class="slide-title">Example</h2>
+    <div class="example" style="font-size: 25px">
+      <p style="font-size: 100%">100%</p>
+      <p style="font-size: 62.5%">62.5%</p>
+      <p style="font-size: 150%">150%</p>
+      <p style="font-size: 75%">75%</p>
+    </div>
+    </div></article>
+
+    <article class="slide"><div class="content">
+      <h2 class="slide-title">
+        <code>font-style</code>
+      </h2>
+      <p>Available vales are <code>italic</code> and <code>normal</code></p>
+      <pre class="code"><code>
+  .test {
+    font-style: italic;
+  }
+      </code></pre>
+    </div></article>
+
+
+    <article class="slide">
+      <div class="content">
+        <h2 class="slide-title">Example</h2>
+        <p style="font-size: 150px; font-style: italic; font-family: serif;">italic</p>
+      </div>
+    </article>
+
+    <article class="slide"><div class="content">
+      <h2 class="slide-title"><code>font-weight</code></h2>
+      <p>Available values are <code>bold</code> and <code>normal</code></p>
+      <pre class="code"><code>
+  .test {
+    font-weight: bold;
+  }
+      </code></pre>
+    </div></article>
+
+    <article class="slide">
+      <div class="content">
+        <h2 class="slide-title">Example</h2>
+        <p style="font-size: 150px; font-weight: bold; font-family: serif;">bold</p>
+      </div>
+    </article>
+
+    <article class="slide"><div class="content">
+      <h2 class="slide-title"><code>font-variant</code></h2>
+      <p>Available values are <code>small-caps</code> and <code>none</code></p>
+    </div></article>
+
+    <article class="slide">
+      <div class="content">
+        <h2 class="slide-title">Example</h2>
+        <p style="font-size: 150px; font-variant: small-caps; font-family: serif;">Small-caps</p>
+      </div>
+    </article>
+
+    <article class="slide"><div class="content">
+      <h2 class="slide-title"><code>text-align</code></h2>
+      <p>The <code>text-align</code> CSS property describes how text is aligned in its parent.</p>
+      <p>Available values are <code>left</code>, <code>center</code>, <code>right</code>, and <code>justified</code>.</p>
+    </div></article>
+
+    <article class="slide">
+      <div class="content">
+        <h2 class="slide-title">Example</h2>
+        <p style="font-size: 45px; text-align: left;">
+          Lorem ipsum dolor sit amet.
+        </p>
+        <p style="font-size: 45px; text-align: center">
+          Lorem ipsum dolor sit amet.
+        </p>
+        <p style="font-size: 45px; text-align: right">
+          Lorem ipsum dolor sit amet.
+        </p>
+        <p style="font-size: 45px; text-align: justified">
+          Lorem ipsum dolor sit amet.
+        </p>
+      </div>
+    </article>
+
+    <article class="slide"><div class="content">
+      <h2 class="slide-title"><code>text-decoration</code></h2>
+      <p>Puts line relative to the text.</p>
+      <p>Available values are <code>underline</code>, <code>overline</code>, <code>line-through</code>, and <code>none</code>.</p>
+    </div></article>
+
+    <article class="slide"><div class="content">
+      <h2 class="slide-title">Example</h2>
+      <p style="font-size: 100px; text-decoration: underline">Text Decoration</p>
+    </div></article>
+
+    <article class="slide"><div class="content">
+      <h2 class="slide-title"><code>text-transform</code></h2>
+      <p>Transforms the case of the letters in an element.</p>
+      <p>Available values are <code>uppercase</code>, <code>lowercase</code>, <code>capitalize</code>, and <code>none</code>.</p>
+    </div></article>
+
+
+    <article class="slide"><div class="content">
+      <h2 class="slide-title">Example</h2>
+      <p style="font-size: 100px; text-transform: Capitalize">Text transform</p>
+    </div></article>
+
+    <article class="slide"><div class="content">
+      <h2 class="slide-title"><code>text-shadow</code></h2>
+      <p>Adds a shadow to text</p>
+      <pre class="code"><code>
+    text-shadow: [x-offset] [y-offset] [blur radius] [color];
+      </code></pre>
+    </div></article>
+
+
+    <article class="slide"><div class="content">
+      <h2 class="slide-title">Example</h2>
+      <p style="font-size: 100px; text-shadow: 0 0 5px blue;">Text shadow</p>
+    </div></article>
+
+    <article class="slide"><div class="content">
+      <h2 class="slide-title"><code>line-height</code></h2>
+      <p>The height of a line of text. Can be specified in px, em, or percentage</p>
+    </div></article>
+
+    <article class="slide"><div class="content">
+      <h2 class="slide-title">Example</h2>
+      <p style="font-size: 100px; margin:0; font-family: serif">This</p>
+      <p style="font-size: 100px; margin:0; font-family: sans-serif">That</p>
+      <p style="font-size: 100px; margin:0; font-family: cursive">The other</p>
+    </div></article>
+
+    <article class="slide"><div class="content">
+      <h2 class="slide-title"><code>letter-spacing</code></h2>
+      <p>The space between letters. Can be specified in px or em.</p>
+    </div></article>
+
+    <article class="slide"><div class="content">
+      <h2 class="slide-title">Example</h2>
+      <p style="font-size: 100px; font-family: serif; letter-spacing: 1px">letter spacing</p>
+    </div></article>
+
+    <article class="slide"><div class="content">
+    </div></article>
+    <article class="slide"><div class="content">
+    </div></article>
+
+
+
+  </section><!-- #presentation -->
+  <script src="../js/vendor/jquery.js"></script>
+  <script src="../js/showandtell.js"></script>
+  <script src="../js/vendor/prettify.js"></script>
+  <script>
+    (function($, global, undefined){
+
+      // see demo for more conifg options
+      showandtell.init({
+        bigSpace : false
+      });
+      prettyPrint();
+
+    }(this.jQuery, this));
+  </script>
+
+</body>
+</html>
