@@ -30,22 +30,22 @@ h1, h2 {
 
 .lesson {
   padding: .5em 2em;
-  -webkit-transition : all .45s ease;
-     -moz-transition : all .45s ease;
-      -ms-transition : all .45s ease;
-       -o-transition : all .45s ease;
-          transition : all .45s ease;
+  -webkit-transition : background-color .45s ease;
+     -moz-transition : background-color .45s ease;
+      -ms-transition : background-color .45s ease;
+       -o-transition : background-color .45s ease;
+          transition : background-color .45s ease;
 }
 
 .lesson nav a {
   color : #fff;
   margin: 0 1em;
   text-decoration: none;
-  -webkit-transition : all .45s ease;
-     -moz-transition : all .45s ease;
-      -ms-transition : all .45s ease;
-       -o-transition : all .45s ease;
-          transition : all .45s ease;
+  -webkit-transition : color .45s ease;
+     -moz-transition : color .45s ease;
+      -ms-transition : color .45s ease;
+       -o-transition : color .45s ease;
+          transition : color .45s ease;
 }
 
 .lesson-1 { background-color: #222; }
@@ -61,25 +61,30 @@ h1, h2 {
 
 .lesson:hover {
   color : #222;
-  -webkit-transition : all .45s ease;
-     -moz-transition : all .45s ease;
-      -ms-transition : all .45s ease;
-       -o-transition : all .45s ease;
-          transition : all .45s ease;
+  -webkit-transition : background-color .45s ease;
+     -moz-transition : background-color .45s ease;
+      -ms-transition : background-color .45s ease;
+       -o-transition : background-color .45s ease;
+          transition : background-color .45s ease;
 }
 
 .lesson:hover nav a {
   color: #000;
-  -webkit-transition : all .45s ease;
-     -moz-transition : all .45s ease;
-      -ms-transition : all .45s ease;
-       -o-transition : all .45s ease;
-          transition : all .45s ease;
+  -webkit-transition : color .45s ease;
+     -moz-transition : color .45s ease;
+      -ms-transition : color .45s ease;
+       -o-transition : color .45s ease;
+          transition : color .45s ease;
 }
 
 .lesson:hover nav a:hover {
   border-bottom: 1px dashed;
-  /*text-shadow: 0 0 4px rgba(0, 0, 0, .45);*/
+  color: #fff;
+  -webkit-transition : color .45s ease;
+     -moz-transition : color .45s ease;
+      -ms-transition : color .45s ease;
+       -o-transition : color .45s ease;
+          transition : color .45s ease;
 }
 
 .lesson-1:hover { background-color: #1bc900; }
