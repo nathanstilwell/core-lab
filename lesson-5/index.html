@@ -1,0 +1,312 @@
+<!doctype html>
+<html>
+  <title>Lesson 5 :: Core Lab Interactions</title>
+
+  <link rel="stylesheet" href="../css/normalize.css">
+  <link rel="stylesheet" href="../css/prettify-custom.css">
+  <link rel="stylesheet" href="../css/slides.css">
+  <link rel="stylesheet" href="css/style.css">
+
+  <script src="../js/vendor/modernizr-2.0.6.min.js"></script>
+<body>
+  <secion id="presentation" class="presentation">
+
+    <article class="slide">
+      <div class="content">
+        <hgroup>
+          <h1 class="title">Core Lab Interactions</h1>
+          <h2 class="sub-title">Lesson 5</h2>
+        </hgroup>
+      </div>
+    </article>
+
+    <article class="slide">
+      <div class="content">
+        <h1 class="title">Today</h1>
+        <ul class="trad-list">
+          <li>Form elements</li>
+          <li>Psuedo Classes</li>
+          <li>Transitions</li>
+          <li>Time to Work</li>
+        </ul>
+      </div>
+    </article>
+
+    <article class="slide">
+      <div class="content">
+        <h1 class="title">Interaction</h1>
+      </div>
+    </article>
+
+    <article class="slide">
+      <div class="content">
+        <h1 class="sub-text">with Links</h1>
+        <h2 class="sub-text">Allow the user to show intention</h2>
+      </div>
+    </article>
+
+    <article class="slide">
+      <div class="content">
+        <h1 class="sub-text">with Forms</h1>
+        <h2 class="sub-text">Gather information from the user</h2>
+      </div>
+    </article>
+
+
+    <article class="slide">
+      <div class="content">
+        <h1 class="sub-text">Form Elements</h1>
+        <form style="font-size: 32px; text-align:left;">
+          <div>
+            <label for="text">text</label> <input type="text" name="text">
+          </div>
+
+          <div>
+            <label for="radio">radio</label>
+            <input type="radio" name="radio">
+            <input type="radio" name="radio">
+            <input type="radio" name="radio">
+          </div>
+
+          <div>
+            select
+            <select name="" id="">
+              <option value="one" name="option">one</option>
+              <option value="two" name="option">two</option>
+              <option value="three" name="option">three</option>
+            </select>
+          </div>
+
+          <div>
+            <label for="checkbox">checkbox</label>
+            <input type="checkbox">
+          </div>
+
+          <div>
+            <label for="range">range</label>
+            <input type="range" name="range">
+          </div>
+
+          <div><input type="date"></div>
+        </form>
+
+        <aside class="more=info">More in chapter 7 or <a href="http://developers.whatwg.org/forms.html">here</a>.</div>
+      </div>
+    </article>
+
+    <article class="slide">
+      <div class="content">
+        <h1 class="title">To get you started</h1>
+      </div>
+    </article>
+
+    <article class="slide">
+      <div class="content">
+        <h1 class="title">&lt;input&gt;</h1>
+        <pre class="code"><code>
+          &lt;input type="" name="" value="" placeholder=""&gt;
+        </code></pre>
+      </div>
+    </article>
+
+
+    <article class="slide">
+      <div class="content">
+        <h1 class="title">Input Type Text</h1>
+        <pre class="code"><code>
+          &lt;input type="text" placeholder="type here"&gt;
+        </code></pre>
+        <label for="text">Text</label></label>
+        <input type="text" class="text" placeholder="type here">
+      </div>
+    </article>
+
+    <article class="slide">
+      <div class="content">
+        <h2 class="sub-text">Inputs are easy to style, some form elements are not.</h2>
+      </div>
+    </article>
+
+    <article class="slide">
+      <div class="content">
+        <h1 class="title">&lt;button&gt;</h1>
+        <pre class="code"><code>
+          &lt;button&gt;Content&lt;/button&gt;
+        </code></pre>
+        <button>I'm a button</button>
+      </div>
+    </article>
+
+    <article class="slide">
+      <div class="content">
+        <h2 class="sub-text">Buttons are more versatile than links, in terms of style and purpose</h2>
+      </div>
+    </article>
+
+    <article class="slide"><div class="content">
+      <h1 class="title">They can be containers too!</h1>
+      <button class="sample-button-as-container">
+        <div class="star-container">
+          <img class="star gold-star" src="img/gold-star.svg">
+          <img class="star star-outline" src="img/star.svg">
+        </div>
+        Favorite
+      </button>
+      <div class="credit">
+        <a href="http://thenounproject.com/noun/star/#icon-No431" target="_blank">Star</a>  from The Noun Project
+      </div>
+    </div></article>
+
+
+    <article class="slide"><div class="content">
+      <h1 class="title">Psuedo Classes</h1>
+      <p class="sub-text">Change style based on interaction</p>
+    </div></article>
+
+
+    <article class="slide"><div class="content">
+      <h1 class="title">In the beginning</h1>
+      <p class="sub-text">When the web was just links</p>
+      <ul class="trad-list">
+        <li>:link - a link that has not been visited</li>
+        <li>:active - a link that is being clicked</li>
+        <li>:visited - a link that has been visited</li>
+        <li>:hover - a link that is under the mouse</li>
+      </ul>
+    </div></article>
+
+    <article id="demo-link" class="slide"><div class="content">
+      <h1 class="title">for instance</h1>
+      <p class="sub-text">
+        <a href="#demo-link" class="demo-link">demo link</a>
+      </p>
+    </div></article>
+
+    <article class="slide"><div class="content">
+      <h1 class="sub-text">:active and :hover work for boxes too.</h1>
+      <div class="demo-box"></div>
+    </div></article>
+
+
+    <article class="slide"><div class="content">
+      <h1 class="title">:hover works for most everything</h1>
+      <div class="hover-demo">
+        <div class="hover-square red">hover</div>
+        <div class="hover-square green">over</div>
+        <div class="hover-square blue">all</div>
+        <div class="hover-square yellow">these</div>
+        <div class="hover-square magenta">squar</div>
+        <div class="hover-square cyan">es</div>
+      </div>
+      <aside class="more-info">
+        More about Psuedo Classes <a href="http://css-tricks.com/pseudo-class-selectors/">here</a> and <a href="https://developer.mozilla.org/en-US/docs/CSS/Pseudo-classes">here</a>
+      </aside>
+    </div></article>
+
+    <article class="slide"><div class="content">
+      <h1 class="title">Transitions</h1>
+      <p class="sub-text">Smoothing out the state changes</p>
+    </div></article>
+
+    <article class="slide"><div class="content">
+      <h1 class="title">No transition</h1>
+      <p class="sub-text no-transition-demo">Hover me.</p>
+    </div></article>
+
+    <article class="slide"><div class="content">
+      <h1 class="title">Transition</h1>
+      <p class="sub-text transition-demo">Hover me.</p>
+    </div></article>
+
+    <article class="slide"><div class="content">
+      <h1 class="title">transition</h1>
+      <pre class="code"><code>
+        /* shorthand */
+        transition : [property] [duration] [easing] [delay]
+        /* or */
+        transition-property: [property];
+        tranistion-duration: [duration];
+        transition-timing-function: [timing-function];
+        transition-delay: [delay];
+      </code></pre>
+    </div></article>
+
+    <article class="slide"><div class="content">
+      <h1 class="title">Width Transition</h1>
+      <div class="width-demo"></div>
+      <pre class="code"><code>
+  &lt;!-- html --&gt;
+  &lt;div class="width-demo"&gt;&lt;/div&gt;
+
+  /* css */
+  .width-demo {
+    width: 100px;
+    transition: width 1s ease;
+  }
+  .width-demo:hover {
+    width: 100%;
+    transition: width 1s ease;
+  }
+      </code></pre>
+    </div></article>
+
+    <article class="slide"><div class="content">
+      <h1 class="title">More Info</h1>
+      <p class="sub-text">
+        about transitions <a href="http://css3.bradshawenterprises.com/transitions/" title="compare timing functions">here</a>, <a href="http://leaverou.github.com/animatable/" title="animatable properties">here</a>, and <a href="http://matthewlein.com/ceaser/" title="Make your own timing function!">here</a>.
+      </p>
+    </div></article>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!--
+
+    <article class="slide">
+      <div class="content">
+        <form action="" class="search" tabindex="2">
+          <input class="search-text" type="search" name="search"placeholder="search">
+          <button class="search-button">
+            <img class="magnifying-glass" src="img/magnifying-glass.svg">
+          </button>
+        </form>
+
+        <div class="credit">
+          <a href="http://thenounproject.com/noun/magnifying-glass/#icon-No9836" target="_blank">Magnifying Glass</a> designed by <a href="http://thenounproject.com/gardiles" target="_blank">Gabriel Ardiles</a> from The Noun Project
+        </div>
+      </div>
+    </article>
+-->
+
+  </secion><!-- presentation -->
+
+  <script src="../js/vendor/jquery.js"></script>
+  <script src="../js/showandtell.js"></script>
+  <script src="../js/vendor/prettify.js"></script>
+  <script>
+    (function($, global, undefined){
+
+      // see demo for more conifg options
+      showandtell.init({
+        bigSpace : false
+      });
+      prettyPrint();
+
+    }(this.jQuery, this));
+  </script>
+</body>
+</html>
