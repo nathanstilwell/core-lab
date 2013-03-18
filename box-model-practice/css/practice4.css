@@ -1,0 +1,16 @@
+.row {
+  margin: 0 auto;
+  width: 608px;
+}
+
+.boxes {
+  margin: 0 auto;
+  width: 244px;
+}
+
+.box {
+  border: 1px solid;
+  height: 100px;
+  margin: 10px;
+  width: 100px;
+}

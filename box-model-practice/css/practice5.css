@@ -1,0 +1,35 @@
+.boxes {
+  background-color: #8bc53f;
+  border: 1px solid;
+  margin: 0 auto;
+  width: 440px;
+}
+
+.container {
+  background-color: white;
+  border: 1px solid;
+  height: 200px;
+  left: 40px;
+  padding: 30px;
+  position: relative;
+  top: 40px;
+}
+
+.container .content {
+  background-color: green;
+  border: 1px solid;
+  height: 111px;
+  margin: auto;
+}
+
+.button {
+  background-color: #d6de22;
+  border: 1px solid;
+  bottom: 10px;
+  height: 30px;
+  position: absolute;
+  width: 30px;
+}
+
+.prev { left: 10px; }
+.next { right: 10px; }

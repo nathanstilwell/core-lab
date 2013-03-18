@@ -87,7 +87,6 @@
 .demo-box:active { background-color: lime; }
 
 
-
 /* hover demo */
 
 .hover-demo {
@@ -116,11 +115,6 @@
 .hover-demo:hover .hover-square {
   color: #fff;
   text-shadow: 0 0 20px rgba(255, 255, 255, .5);
-  -webkit-transition: all .75s ease;
-  -moz-transition: all .75s ease;
-  -ms-transition: all .75s ease;
-  -o-transition: all .75s ease;
-  transition: all .75s ease;
 }
 
 .hover-demo .red:hover { background-color: red; }
@@ -160,11 +154,6 @@
   color: white;
   text-shadow: none;
   text-shadow: 10px 10px 3px black;
-  -webkit-transition: all .5s ease-in-out;
-  -moz-transition: all .5s ease-in-out;
-  -ms-transition: all .5s ease-in-out;
-  -o-transition: all .5s ease-in-out;
-  transition: all .5s ease-in-out;
 }
 
 .width-demo {
@@ -182,11 +171,6 @@
 
 .width-demo:hover {
   width: 500px;
-  -webkit-transition: width 1s ease;
-  -moz-transition: width 1s ease;
-  -ms-transition: width 1s ease;
-  -o-transition: width 1s ease;
-  transition: width 1s ease;
 }
 
 .super-fun {
@@ -197,7 +181,15 @@
   transition-timing-function: cubic-bezier(1, -0.5, 0, 1.5);
 }
 
+/* Code fomatting */
 
+.code .comment {
+  color: #999;
+}
+
+.prefixes strong {
+  color: pink;
+}
 
 
 

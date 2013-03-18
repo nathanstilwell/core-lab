@@ -1,0 +1,11 @@
+.boxes {
+  margin: 0 auto;
+  width: 604px;
+}
+
+.box {
+  border: 1px solid;
+  height: 260px;
+  margin: 20px;
+  width: 260px;
+}

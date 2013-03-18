@@ -1,0 +1,37 @@
+html, body {
+  height: 100%;
+}
+
+.page-wrapper-outer {
+  display: table;
+  height: 100%;
+  width: 100%;
+}
+
+.page-wrapper-inner {
+  display: table-cell;
+  text-align: center;
+  vertical-align: middle;
+}
+
+/* -- util classes -- */
+
+.clearfix {
+  overflow: auto;
+  position: relative;
+}
+
+.header .title {
+  font-family: sans-serif;
+  font-size: 130px;
+  margin: 0 0 .5em 0;
+}
+
+.main { min-width: 613px; }
+
+.red         { background-color: red; }
+.blue        { background-color: dodgerblue; }
+.float-left  { float: left; }
+.float-right { float: right; }
+.clear-left  { clear: left;}
+.clear-right { clear: right; }
