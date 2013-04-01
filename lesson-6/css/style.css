@@ -1,0 +1,92 @@
+html {
+  background: white url(../img/grid.png) repeat top left;
+}
+
+.presentation .small-title {
+  font-size: 100px;
+}
+
+.presentation .slide {
+  margin-bottom: 45px;
+}
+
+.example {
+  border: 1px dotted;
+  font-size: 45px;
+  font-weight: bold;
+  line-height: 100px;
+  min-height: 100px;
+  text-shadow: 1px 1px 1px rgba(255, 255, 255, .45);
+}
+
+.slide .half {
+  float: left;
+  margin: 1%;
+  width: 45%;
+}
+
+.slide .code.half {
+  font-size: 20px;
+  padding: 1%;
+}
+
+.right {
+  float: right;
+}
+
+.background-color {
+  background-color: hotpink;
+}
+
+.background-image {
+  background-image: url(../img/rose.png);
+}
+
+.background-repeat {
+  background-color: #efefed;
+  background-image: url(../img/leaf.svg);
+  background-repeat: repeat;
+  color: blue;
+}
+
+.no-repeat {
+  background-repeat: no-repeat;
+}
+
+.background-attachment {
+  height: 100px;
+  overflow: scroll;
+}
+
+.background-attachment .tall-container {
+  background-image: url(../img/floral.png);
+  background-attachment: scroll;
+  height: 1000px;
+}
+
+.fixed .tall-container {
+  background-attachment: fixed;
+}
+
+.background-position {
+  background-color: white;
+  background-image: url(../img/small-ninja.svg);
+  background-repeat: no-repeat;
+}
+
+.top-right {
+  background-position: top right;
+}
+
+.bottom-left {
+  background-position: bottom left;
+}
+
+.background-size {
+  background-image: url('../img/booze.jpg');
+  background-repeat: no-repeat;
+  background-size: auto 75%;
+  color: blue;
+  height: 400px;
+  line-height: 400px;
+}

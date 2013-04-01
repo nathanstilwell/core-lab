@@ -1,0 +1,247 @@
+<!doctype html>
+<html>
+<head>
+  <title>Lesson 6 :: Parsons Core Lab Interactions :: Section C</title>
+
+  <link rel="stylesheet" href="../css/normalize.css">
+  <link rel="stylesheet" href="../css/prettify-custom.css">
+  <link rel="stylesheet" href="../css/slides.css">
+  <link rel="stylesheet" href="css/style.css">
+
+  <script src="../js/vendor/modernizr-2.0.6.min.js"></script>
+</head>
+<body>
+
+<section id="presentation" class="presentation">
+  <article class="slide">
+    <div class="content">
+      <hgroup>
+        <h1 class="title">Core Lab Interactions</h1>
+        <h2 class="sub-title">Lesson 6</h2>
+      </hgroup>
+    </div>
+  </article>
+
+  <article class="slide">
+    <div class="content">
+      <h1 class="small-title">Background</h1>
+    </div>
+  </article>
+
+
+  <article class="slide">
+    <div class="content">
+      <h1 class="small-title">Background Color</h1>
+      <p class="sub-text">Sets the background of the element to a solid color.</p>
+      <p class="sub-text">
+        <strong>Available Values</strong>: Any valid color, or <em>none</em>
+      </p>
+    </div>
+  </article>
+
+  <article class="slide">
+    <div class="content">
+      <h1 class="small-title">Background Color</h1>
+      <div class="example background-color">
+        Background Color
+      </div>
+
+      <pre class="code"><code>
+  .example {
+    background-color: hotpink;
+  }
+      </code></pre>
+    </div>
+  </article>
+
+
+
+
+
+
+  <article class="slide"><div class="content">
+    <h1 class="small-title">Background Image</h1>
+    <p class="sub-text">Sets the background of an element to an image</p>
+    <p class="sub-text">
+      <strong>Available Values</strong>: URL to any valid image, or <em>none</em>
+    </p>
+  </div></article>
+
+
+  <article class="slide"><div class="content">
+    <h1 class="small-title">Background Image</h1>
+    <div class="example background-image">Background Image</div>
+    <pre class="code"><code>
+  .example {
+    background-image: url(../img/rose.png);
+  }
+    </code></pre>
+  </div></article>
+
+
+
+
+
+
+  <article class="slide"><div class="content">
+    <h1 class="small-title">Background Repeat</h1>
+    <p class="sub-text">Sets repeat value for background image</p>
+    <p class="sub-text">
+      <strong>Available Values</strong>: <em>repeat</em>, <em>no-repeat</em>, <em>none</em>
+    </p>
+  </div></article>
+
+  <article class="slide"><div class="content">
+    <h1 class="small-title">Background Repeat</h1>
+    <div class="example background-repeat no-repeat half">Background Repeat</div>
+    <div class="example background-repeat half right">Background Repeat</div>
+    <pre class="code half"><code>
+  .example {
+    background-image: url(../img/leaf.svg);
+    background-repeat: no-repeat;
+  }
+    </code></pre>
+    <pre class="code half right"><code>
+  .example {
+    background-image: url(../img/leaf.svg);
+    background-repeat: repeat;
+  }
+    </code></pre>
+  </div></article>
+
+
+
+
+
+
+
+
+
+  <article class="slide"><div class="content">
+    <h1 class="small-title">Background Attachment</h1>
+    <p class="sub-text">Sets how background should behave during scroll</p>
+    <p class="sub-text">
+      <strong>Available Values</strong>: <em>scroll</em>, <em>fixed</em>
+    </p>
+  </div></article>
+
+  <article class="slide"><div class="content">
+    <h1 class="small-title">Background Attachment</h1>
+    <div class="example background-attachment half">
+      <div class="tall-container">Background Attachment</div>
+    </div>
+    <div class="example background-attachment fixed half right">
+      <div class="tall-container">Background Attachment</div>
+    </div>
+    <pre class="code half"><code>
+  .example {
+    background-image: url(../img/floral.png);
+    background-attachment: scroll;
+  }
+    </code></pre>
+    <pre class="code half right"><code>
+  .example {
+    background-image: url(../img/floral.png);
+    background-attachment: fixed;
+  }
+    </code></pre>
+  </div></article>
+
+
+
+
+
+
+
+
+  <article class="slide"><div class="content">
+    <h1 class="small-title">Background Position</h1>
+    <p class="sub-text">Sets the position of the background relative to the element</p>
+    <p class="sub-text">
+      <strong>Available Values</strong>:
+      <em>
+        top, center, bottom; left, center, right; Pixels
+      </em>
+    </p>
+  </div></article>
+
+  <article class="slide"><div class="content">
+    <h1 class="small-title">Background Position</h1>
+    <div class="example background-position top-right half">Background Position</div>
+    <div class="example background-position bottom-left half right">Background Position</div>
+    <pre class="code half"><code>
+  .example {
+    background-image: url(../img/ninja.png);
+    background-position: top right;
+  }
+    </code></pre>
+    <pre class="code half right"><code>
+  .example {
+    background-image: url(../img/ninja.png);
+    background-position: bottom left;
+  }
+    </code></pre>
+  </div></article>
+
+
+
+
+
+
+
+
+
+
+  <article class="slide"><div class="content">
+    <h1 class="small-title">Background Size</h1>
+    <p class="sub-text">Sets how the size of the background image relative to the element</p>
+    <p class="sub-text">
+      <strong>Available Values</strong>:
+      <em>Percentage, Pixels, cover, contain</em>
+    </p>
+
+  </div></article>
+
+  <article class="slide"><div class="content">
+    <h1 class="small-title">Background Size</h1>
+    <div class="example background-size">Background Size</div>
+    <pre class="code"><code>
+  .example {
+    background-image: url(../img/booze.jpg);
+    background-size: auto 75%;
+  }
+    </code></pre>
+  </div></article>
+
+
+  <article class="slide"><div class="content">
+    <h1 class="small-title">
+      <a href="example.html">Background Size Example</a>
+    </h1>
+
+  </div></article>
+
+
+
+
+</section><!-- / #presentation -->
+
+ <div class="scripts">
+    <script src="../js/vendor/jquery.js"></script>
+    <script src="../js/showandtell.js"></script>
+    <script src="../js/vendor/prettify.js"></script>
+    <script>
+      (function($, global, undefined){
+
+        // see demo for more conifg options
+        showandtell.init({
+          bigSpace : false
+        });
+        prettyPrint();
+
+      }(this.jQuery, this));
+    </script>
+  </div>
+
+</body>
+</html>
